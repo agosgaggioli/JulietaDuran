@@ -11,6 +11,8 @@
 
 <body>
     <header>
+        <button class="menu-toggle">&#9776;</button>
+
         <nav>
             <ul>
                 <li><a href="#inicio">Incio</a></li>
@@ -246,7 +248,7 @@
       <p>Jduran.terapiaocupacional@gmail.com</p>
     </div>
     <div class="botones-f">
-    <a href="docs/JulietaDuran.pdf" class="footer-btn" download>Descargar Carpeta</a>
+    <a href="docs/Duran_Julieta_Carpeta.pdf" class="footer-btn" download>Descargar Carpeta</a>
     </div>
     
   </div>
@@ -265,6 +267,17 @@
                 prevEl: ".swiper-button-prev",
             },
         });
+
+         const toggleBtn = document.querySelector('.menu-toggle');
+  const menu      = document.querySelector('nav ul');
+
+  toggleBtn.addEventListener('click', ()=>{
+    if(menu.style.display === 'flex'){
+      menu.style.display = 'none';
+    }else{
+      menu.style.display = 'flex';
+    }
+  });
     </script>
 </body>
 

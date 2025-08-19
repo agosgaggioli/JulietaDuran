@@ -334,3 +334,112 @@ footer{
     flex-direction: column;
     gap: 10px;
 }
+/* ================== MENU HAMBURGUESA MOBILE ================== */
+.menu-toggle{
+  display:none;  /* se muestra solo en mobile */
+}
+
+@media screen and (max-width:768px){
+    .menu-toggle{
+    display:block;
+    background:none;
+    border:none;
+    font-size:32px;
+    margin:10px;
+    cursor:pointer;
+  }
+
+  nav{
+    display:block;   /* ✅ añadí esta línea */
+  }
+
+  nav ul{
+    display:none;
+    flex-direction:column;
+    gap:10px;
+    background:#cdddf7;
+    padding:15px;
+  }
+}
+@media screen and (min-width:769px){
+  nav ul{
+    display:flex;
+  }
+}
+@media screen and (max-width: 768px) {
+    
+    
+
+  .contenedor-prin{
+    flex-direction:column;
+    gap:30px;
+    margin-top:20px;
+  }
+
+  .hero-name{
+    width:100%;
+    height:auto;
+  }
+  .hero-name h1,
+  .hero-name span{
+    font-size:40px;
+  }
+
+  .info-container{
+    flex-direction:column;
+    gap:10px;
+  }
+
+  .quePrincipal{
+    flex-direction:column;
+    gap:20px;
+  }
+
+  .objetivo{
+    flex-direction:column;
+    gap:20px;
+    justify-content: center;
+  }
+
+  .servicios{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+  }
+  .servicios-prin{
+    display: flex;
+     flex-direction:column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .servicios-img{
+  display:flex;
+  flex-direction:column;
+  align-items:center;  
+}
+.servicios-img img{
+  width:100%;           
+  max-width:350px;     
+}
+
+  .imagenes-flex{
+    width:100%;
+  }
+  .img-grande,
+  .img-chica,
+  .img-chica1{
+    height:180px;
+  }
+
+  footer{
+    flex-direction:column;
+    gap:20px;
+    text-align:center;
+  }
+  .footer-info{
+    flex-direction:column;
+    gap:15px;
+  }
+}
